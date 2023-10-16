@@ -4,7 +4,6 @@ var app = Vue.createApp({
       confirmed:false,
       name: "",
       mobile: "",
-
       appliedCoupon: null,
       couponCode: "",
       coupons: [
@@ -193,8 +192,6 @@ var app = Vue.createApp({
       }
 
       clickedSeat.type = clickedSeat.type === "selected" ? "available" : "selected";
-
-      console.log(clickedSeat); 
     
     },
 

@@ -147,7 +147,9 @@
               <input type="text" placeholder="Mobile" v-model="mobile" />
             </div>
 
-            <button class="confirm-button" @click="confirm">
+            <button class="confirm-button"  @click="confirm" :disabled="!name || !mobile"  :class="{
+              'confirm-button__disabled': !name || !mobile, 
+            }">
               Confirm
             </button>
 
